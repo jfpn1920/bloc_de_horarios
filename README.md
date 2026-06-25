@@ -1,4 +1,4 @@
-# 👋👋 ¡Bienvenidos! a mi proyecto bloc de horarios
+# 👋¡Bienvenidos! a mi proyecto bloc de horarios
 
 <img src="imagen_presentacion.png" alt="Presentación" width="220" align="left" style="margin-right: 20px;">
 
@@ -65,7 +65,7 @@
 * Resumen de actividades en progreso.
 * Persistencia de datos en <b>localstorage</b>.
 * Persistencia de datos en <b>mysql</b>.
-* Conexión entre JavaScript y PHP mediante <b>fetch()</b>.
+* Conexión entre javascript y php mediante <b>fetch()</b>.
 * Manejo de respuestas en formato <b>json</b>.
 * Actualización automática del tablero de horarios.
 * Validación de formularios en frontend y backend.
