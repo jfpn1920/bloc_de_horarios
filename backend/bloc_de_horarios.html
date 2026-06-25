@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloc de horarios</title>
+    <link rel="stylesheet" href="bloc_de_horarios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="bloc_de_horarios.js" defer></script>
+</head>
+<body>
+    <!------------------------------------>
+    <!--|estructurando_bloc_de_horarios|-->
+    <!------------------------------------>
+    <div class="contenedor_bloc_de_horarios">
+        <div class="titulo_bloc_de_horarios">
+            <h2>bloc de horarios</h2>
+        </div>
+        <div class="cuerpo_bloc_de_horarios">
+            <div class="grupo_bloc_de_horarios">
+                <label class="label_bloc_de_horarios">
+                    Colocar la fecha
+                </label>
+                <div class="campo_icono_bloc_de_horarios">
+                    <div class="icono_bloc_de_horarios">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <input
+                        type="date"
+                        id="fecha_bloc_de_horarios"
+                        class="input_bloc_de_horarios">
+                </div>
+            </div>
+            <div class="grupo_bloc_de_horarios">
+                <label class="label_bloc_de_horarios">
+                    Colocar la hora
+                </label>
+                <div class="campo_icono_bloc_de_horarios">
+                    <div class="icono_bloc_de_horarios">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <input
+                        type="time"
+                        id="hora_bloc_de_horarios"
+                        class="input_bloc_de_horarios">
+                </div>
+            </div>
+            <div class="grupo_bloc_de_horarios">
+                <label class="label_bloc_de_horarios">
+                    Seleccionar el estado
+                </label>
+                <select
+                    id="estado_bloc_de_horarios"
+                    class="select_bloc_de_horarios">
+                    <option>Ninguna estado...</option>
+                    <option>Pendiente</option>
+                    <option>En progreso</option>
+                    <option>Completado</option>
+                </select>
+            </div>
+            <div class="grupo_bloc_de_horarios">
+                <label class="label_bloc_de_horarios">
+                    Colocar una nota
+                </label>
+                <textarea
+                    id="nota_bloc_de_horarios"
+                    class="textarea_bloc_de_horarios"
+                    placeholder="Añade la nota...">
+                </textarea>
+            </div>
+            <div class="contenedor_boton_bloc_de_horarios">
+                <button
+                    id="boton_agregar_meta_bloc_de_horarios"
+                    class="boton_bloc_de_horarios">
+                    Agregar horario
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------->
+    <!--|estructurando_resumen_de_horarios|-->
+    <!--------------------------------------->
+    <div class="contenedor_resumen_de_horarios">
+        <div class="tarjeta_resumen_de_horarios">
+            <div class="titulo_resumen_de_horarios">
+                El total
+            </div>
+            <div
+                class="numero_resumen_de_horarios"
+                id="total_resumen_de_horarios"
+            >
+                0
+            </div>
+        </div>
+        <div class="tarjeta_resumen_de_horarios">
+            <div class="titulo_resumen_de_horarios">
+                Completados
+            </div>
+            <div
+                class="numero_resumen_de_horarios"
+                id="completados_resumen_de_horarios"
+            >
+                0
+            </div>
+        </div>
+        <div class="tarjeta_resumen_de_horarios">
+            <div class="titulo_resumen_de_horarios">
+                Pendientes
+            </div>
+            <div
+                class="numero_resumen_de_horarios"
+                id="pendientes_resumen_de_horarios"
+            >
+                0
+            </div>
+        </div>
+        <div class="tarjeta_resumen_de_horarios">
+            <div class="titulo_resumen_de_horarios">
+                En progreso
+            </div>
+            <div
+                class="numero_resumen_de_horarios"
+                id="en_progreso_resumen_de_horarios"
+            >
+                0
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------->
+    <!--|estructurando_tablero_de_horarios|-->
+    <!--------------------------------------->
+    <div
+        class="contenedor_tablero_de_horarios"
+    >
+        <div
+            class="titulo_tablero_de_horarios"
+        >
+            Tablero de horarios
+        </div>
+        <table
+            class="tabla_tablero_de_horarios"
+        >
+            <thead>
+                <tr>
+                    <th
+                        class="columna_numero_tablero_de_horarios"
+                    >
+                        N°
+                    </th>
+                    <th
+                        class="columna_fecha_tablero_de_horarios"
+                    >
+                        Fecha
+                    </th>
+                    <th
+                        class="columna_hora_tablero_de_horarios"
+                    >
+                        Hora
+                    </th>
+                    <th
+                        class="columna_nota_tablero_de_horarios"
+                    >
+                        Nota
+                    </th>
+                    <th
+                        class="columna_estado_tablero_de_horarios"
+                    >
+                        Estado
+                    </th>
+                    <th
+                        class="columna_acciones_tablero_de_horarios"
+                    >
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody
+                id="tbody_tablero_de_horarios"
+            >
+                <tr
+                    id="fila_vacia_tablero_de_horarios"
+                >
+                    <td
+                        colspan="6"
+                        class="mensaje_vacio_tablero_de_horarios"
+                    >
+                        <div
+                            class="contenido_tablero_de_horarios_vacio"
+                        >
+                            <p>
+                                Ninguna hora añadida en el tablero
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
